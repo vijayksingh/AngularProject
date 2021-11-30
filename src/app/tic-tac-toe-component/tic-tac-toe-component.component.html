@@ -1,0 +1,5 @@
+<div class="board-container" *ngFor="let row of board">
+  <div *ngFor="let square of row">
+    <app-square [square]="square" (nextMove)="nextMove.emit($event)"> </app-square>
+  </div>
+</div>
